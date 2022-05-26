@@ -20,19 +20,23 @@
    <script>
 
       ReactDOM.render(
-      React.createElement(
-         'h1',
-         {id: 'my-heading'},
          React.createElement(
-         'span',
-         null,
-         'React ',
-         React.createElement('em', null, 'é muito'),
+            'table',
+            {id: 'tabela', border:'1', width:'300'},
+            React.createElement(
+               'tr',
+               null,                  
+               React.createElement('th', null, 'Nome'),
+               React.createElement('th', null, 'Ano')
+            ),
+            React.createElement(
+               'tr',
+               null,                  
+               React.createElement('td', null, 'Pac-Man'),
+               React.createElement('td', null, '1980')
+            )
          ),
-         ' massa!'
-         ),
-         document.getElementById('app')
-      );
+      document.getElementById("app"))
 
    </script>
 
